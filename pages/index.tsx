@@ -3,7 +3,9 @@ import { NextPage } from "next";
 const Home: NextPage = () => {
 
     return (
-        <div>Welcome in Zanna</div>
+        <div>
+            Welcome in Zanna
+        </div>
     )
 }
 
