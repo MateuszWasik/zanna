@@ -1,11 +1,9 @@
-import { Navbar } from "../Navbar/Navbar";
+import { Navbar } from '../Navbar/Navbar';
 
 export const Dashboard = () => {
-
-
-    return (
-        <>
-            <Navbar/>
-        </>
-    )
-}
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
