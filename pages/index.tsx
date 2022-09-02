@@ -1,10 +1,11 @@
 import { NextPage } from "next";
+import { Dashboard } from "../components/Dashboard/Dashboard";
 
 const Home: NextPage = () => {
 
     return (
         <div>
-            Welcome in Zanna
+            <Dashboard/>
         </div>
     )
 }
