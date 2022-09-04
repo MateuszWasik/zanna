@@ -6,12 +6,12 @@ import { WelcomeSequence } from '../WelcomeSequence/WelcomeSequence';
 export const Navbar = () => {
   return (
     <div>
-      <div className="flex justify-end items-center max-w h-20 pr-5 pl-5 bg-blue-600">
-        <div className="flex content-end w-20 mr-1 invisible animate-fadeIn animation-delay-4000">
+      <div className="relative flex justify-end items-center max-w h-14 pr-5 pl-5 bg-blue-600">
+        <div className="flex justify-end w-20 mr-4 invisible animate-fadeIn animation-delay-4000">
           <LanguageSelectors />
           <CustomerNotifications />
         </div>
-        <div className="animate-fadeOut">
+        <div className="absolute right-20 animate-fadeOut">
           <WelcomeSequence />
         </div>
 
