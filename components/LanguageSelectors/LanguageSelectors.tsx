@@ -1,3 +1,3 @@
 export const LanguageSelectors = () => {
-  return <div>Language</div>;
+  return <div className="text-white mr-2"></div>;
 };

@@ -8,8 +8,9 @@ module.exports = {
       },
       keyframes: {
         fadeOut: {
-          '0%,100%': { opacity: 0, visibility: 'hidden' },
+          '0%': { opacity: 0, visibility: 'hidden', width: 'inherit', height: 'inherit' },
           '50%': { opacity: 1, visibility: 'visible' },
+          '100%': { opacity: 0, visibility: 'hidden', width: 'inherit', height: '10px' },
         },
         fadeIn: {
           '0%': { opacity: 0, visibility: 'hidden' },
