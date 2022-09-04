@@ -1,5 +1,6 @@
 import { IoChevronDown } from 'react-icons/io5';
 import { useState } from 'react';
+import { CustomerExpandableList } from '../CustomerExpandableList/CustomerExpandableList';
 
 export const CustomerAvatar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -16,7 +17,7 @@ export const CustomerAvatar = () => {
           <IoChevronDown />
         </div>
       </div>
-      {expanded && <div className="absolute top-full w-36 h-52 shadow-md bg-gray-200-600"></div>}
+      {expanded && <CustomerExpandableList />}
     </>
   );
 };
