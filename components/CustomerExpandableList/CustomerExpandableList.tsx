@@ -1,12 +1,20 @@
 import { FiLogOut, FiSettings } from 'react-icons/fi';
 import { RiLockPasswordLine } from 'react-icons/ri';
 
-export const CustomerExpandableList = () => {
+interface CustomerExpandableListProps {
+  expanded: boolean;
+}
+
+export const CustomerExpandableList = ({ expanded }: CustomerExpandableListProps) => {
   return (
-    <div className="absolute top-full w-52 h-auto rounded-md shadow-md bg-gray-50">
+    <div
+      className={`absolute top-14 w-52 right-0 rounded-md shadow-m bg-gray-50 ${
+        expanded ? 'h-auto opacity-100' : 'opacity-0'
+      } transition-opacity duration-700 ease-in-out`}
+    >
       <div className="flex flex-col mb-2 p-3 border-b border-b-gray-200">
         <span className="text-xs">Signed as:</span>
-        <span>Mateusz</span>
+        <span>John Smith</span>
       </div>
       <ul className="p-3">
         <li className="flex items-center pt-0 pb-1">

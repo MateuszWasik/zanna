@@ -1,3 +1,12 @@
-export const Sidebar = () => {
-  return <div className=" absolute w-60 h-screen top-0 z-10 bg-gray-50" />;
+interface SidebarProps {
+  isSidebarCollapsed: boolean;
+}
+
+export const Sidebar = ({ isSidebarCollapsed }: SidebarProps) => {
+  return (
+    <aside
+      className={`flex flex-shrink-0 flex-col border-r transition-width duration-700
+      ${isSidebarCollapsed ? 'w-12' : 'w-64'} `}
+    />
+  );
 };
