@@ -1,4 +1,4 @@
-This is a [Zanna](https://zanna.vercel.app/) - after-hours project created for learning purposes. Zanna is a dashboard
+This is [Zanna](https://zanna.vercel.app/) - after-hours project created for learning purposes. Zanna is a dashboard
 panel for end user from fintech industry.
 
 ## Getting Started
