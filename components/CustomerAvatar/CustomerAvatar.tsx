@@ -17,7 +17,7 @@ export const CustomerAvatar = () => {
           <IoChevronDown />
         </div>
       </div>
-      <CustomerExpandableList expanded={expanded} />
+      {expanded && <CustomerExpandableList expanded={expanded} />}
     </>
   );
 };
