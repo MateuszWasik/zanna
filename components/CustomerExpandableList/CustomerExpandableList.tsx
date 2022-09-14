@@ -6,7 +6,9 @@ export const CustomerExpandableList = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={`absolute top-14 w-52 h-auto right-0 rounded-md shadow-m bg-gray-50`}>
+    <div
+      className={`absolute top-16 right-4 w-52 h-auto rounded-md shadow-m text-white bg-blue-500`}
+    >
       <div className="flex flex-col mb-2 p-3 border-b border-b-gray-200">
         <span className="text-xs">{t('NAVBAR.CUSTOMER_LIST.SIGNED_AS')}</span>
         <span>John Smith</span>
