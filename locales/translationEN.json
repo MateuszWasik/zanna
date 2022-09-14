@@ -1,5 +1,7 @@
 {
   "NAVBAR.CUSTOMER_LIST.SIGNED_AS": "Signed as",
   "NAVBAR.CUSTOMER_LIST.CHANGE_PASSWORD": "Change password",
-  "NAVBAR.CUSTOMER_LIST.SIGN_OUT": "Sign out"
+  "NAVBAR.CUSTOMER_LIST.SIGN_OUT": "Sign out",
+  "SIDEBAR.DASHBOARD": "Dashboard",
+  "SIDEBAR.TRANSACTIONS": "Transactions"
 }

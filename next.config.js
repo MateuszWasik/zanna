@@ -6,6 +6,9 @@ const nextConfig = {
     locales: ['en', 'pl'],
     defaultLocale: 'en',
   },
+  images: {
+    domains: ['thispersondoesnotexist.com/image'],
+  },
 };
 
 module.exports = nextConfig;

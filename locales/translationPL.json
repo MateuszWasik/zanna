@@ -1,5 +1,7 @@
 {
   "NAVBAR.CUSTOMER_LIST.SIGNED_AS": "Zalogowany jako",
   "NAVBAR.CUSTOMER_LIST.CHANGE_PASSWORD": "Zmień hasło",
-  "NAVBAR.CUSTOMER_LIST.SIGN_OUT": "Wyloguj się"
+  "NAVBAR.CUSTOMER_LIST.SIGN_OUT": "Wyloguj się",
+  "SIDEBAR.DASHBOARD": "Panel główny",
+  "SIDEBAR.TRANSACTIONS": "Transakcje"
 }
