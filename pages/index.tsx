@@ -1,27 +1,15 @@
 import { NextPage } from 'next';
-import { Dashboard } from '../components/Dashboard/Dashboard';
-import { Sidebar } from '../components/Sidebar/Sidebar';
-import { useState } from 'react';
-import { Navbar } from '../components/Navbar/Navbar';
+import Head from 'next/head';
+import { ZanaMainDashboard } from '../components/ZanaMainDashboard/ZanaMainDashboard';
 
-const Home: NextPage = () => {
-  const [sidebarCollapsed, setSideBarCollapsed] = useState(false);
-
-  const handleSidebarCollapse = () => {
-    setSideBarCollapsed(prev => !prev);
-  };
-  return (
-    <div className="flex overflow-x-hidden h-screen">
-      <Sidebar isSidebarCollapsed={sidebarCollapsed} />
-      <div className="flex-1">
-        <Navbar
-          isSidebarCollapsed={sidebarCollapsed}
-          handleSidebarCollapse={handleSidebarCollapse}
-        />
-        <Dashboard />
-      </div>
-    </div>
-  );
-};
+const Home: NextPage = () => (
+  <>
+    <Head>
+      <title>Keep it up | Zanna</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    </Head>
+    <ZanaMainDashboard />
+  </>
+);
 
 export default Home;

@@ -1,7 +1,12 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./pages/**/*.tsx', './components/**/*.tsx'],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
       animation: {
         fadeOut: 'fadeOut 4s linear forwards',
         fadeIn: 'fadeIn 2s linear forwards',

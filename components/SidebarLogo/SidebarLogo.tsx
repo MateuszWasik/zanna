@@ -1,18 +1,19 @@
 import Image from 'next/image';
 import ZannaLogo from '../../public/assets/images/ZannaLogo.png';
 
-interface SidebarLogoProps {
-  isSidebarCollapsed: boolean;
-}
-
-export const SidebarLogo = ({ isSidebarCollapsed }: SidebarLogoProps) => {
+export const SidebarLogo = () => {
   return (
-    <div className="h-14 flex justify-center items-center">
-      {isSidebarCollapsed ? (
-        <Image src={ZannaLogo.src} width="56px" height="56px" alt="" />
-      ) : (
-        <span>ZANNA</span>
-      )}
+    <div className="h-14 flex items-center flex-shrink-0 overflow-hidden">
+      <div className="flex flex-shrink-0 w-14 h-14">
+        <Image
+          src={ZannaLogo.src}
+          width="100%"
+          height="100%"
+          alt=""
+          className="flex flex-shrink-0"
+        />
+      </div>
+      <span>ZANNA</span>
     </div>
   );
 };

@@ -9,10 +9,10 @@ export const Sidebar = ({ isSidebarCollapsed }: SidebarProps) => {
   return (
     <aside
       className={`flex flex-shrink-0 flex-col border-r transition-width duration-700
-      ${isSidebarCollapsed ? 'w-14' : 'w-60'} `}
+      ${isSidebarCollapsed ? 'w-14' : 'w-52'} `}
     >
-      <SidebarLogo isSidebarCollapsed={isSidebarCollapsed} />
-      <SidebarMenuItems isSidebarCollapsed={isSidebarCollapsed} />
+      <SidebarLogo />
+      <SidebarMenuItems />
     </aside>
   );
 };
